@@ -10,4 +10,4 @@ American-style résumés, print-ready. **View: [cristinecula.github.io](https://
 | `Cristian-Necula-Senior-Frontend.pdf` | Send-out PDF (A4) |
 | `Cristian-Necula-Full-Stack.pdf` | Send-out PDF (A4) |
 
-Maintainer of [pionjs](https://github.com/pionjs/pion) · ~3,000 merged open-source pull requests since 2012 · early Svelte contributor
+Maintainer of [pionjs](https://pionjs.com) - React's Hooks API for Web Components · ~3,000 merged open-source pull requests since 2012 · early Svelte contributor
