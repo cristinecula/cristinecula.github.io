@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cristian Necula — Résumés</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56db;
+    --line: #d8d8d8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  .wrap { max-width: 720px; padding: 24px; }
+  h1 { font-size: 28px; letter-spacing: -0.5px; }
+  h1 a { color: inherit; }
+  h1 a:hover { color: var(--accent); }
+  .sub { color: var(--muted); margin-top: 4px; }
+  h1 a { text-decoration: none; }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h2 { font-size: 15px; }
+  .card p { color: var(--muted); font-size: 13px; flex: 1; }
+  .card .actions { display: flex; gap: 10px; }
+  .btn {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.primary:hover { background: #1447b8; }
+  .btn.secondary { color: var(--accent); border: 1px solid var(--line); }
+  .btn.secondary:hover { border-color: var(--accent); }
+
+  .links {
+    margin-top: 24px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .links a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
+  .links a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1><a href="https://github.com/cristinecula">Cristian Necula</a></h1>
+  <div class="sub">Résumés — Web Platform, Frontend Architecture &amp; Full-Stack</div>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Senior Frontend Engineer</h2>
+      <p>Web Components &amp; modern web platform, frontend architecture, zero-downtime migrations, performance and testing infrastructure. Maintainer of pionjs.</p>
+      <div class="actions">
+        <a class="btn primary" href="senior-frontend.html">View (HTML)</a>
+        <a class="btn secondary" href="Cristian-Necula-Senior-Frontend.pdf">PDF</a>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Full-Stack Engineer</h2>
+      <p>End-to-end product building: REST APIs with OAuth, Svelte and Web Components, MySQL, Varnish, Ansible. Founding engineer at Widgetic.</p>
+      <div class="actions">
+        <a class="btn primary" href="fullstack.html">View (HTML)</a>
+        <a class="btn secondary" href="Cristian-Necula-Full-Stack.pdf">PDF</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="links">
+    <a href="https://www.linkedin.com/in/cristian-necula-7b744843/">LinkedIn</a> &nbsp;·&nbsp;
+    <a href="https://github.com/cristinecula">GitHub</a> &nbsp;·&nbsp;
+    <a href="https://github.com/pionjs/pion">pionjs</a> &nbsp;·&nbsp;
+    cristian.ncl@gmail.com
+  </div>
+
+</div>
+</body>
+</html>

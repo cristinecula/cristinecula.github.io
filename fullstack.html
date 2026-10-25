@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cristian Necula — Full-Stack Engineer</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --accent: #1a56db;
+    --line: #d8d8d8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: "Inter", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: #f2f2f2;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  .page {
+    max-width: 800px;
+    margin: 24px auto;
+    background: #fff;
+    padding: 48px 56px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.12);
+  }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--accent); }
+
+  header { margin-bottom: 14px; }
+  h1 {
+    font-size: 30px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+  }
+  .headline {
+    font-size: 16px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  .contact {
+    margin-top: 6px;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+  .contact a { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
+
+  .summary { margin-top: 10px; }
+  .summary p { color: #333; }
+
+  section { margin-top: 18px; }
+  h2 {
+    font-size: 13px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+  }
+
+  .job { margin-bottom: 14px; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .job-title { font-weight: 700; font-size: 15px; }
+  .job-company { font-weight: 600; }
+  .job-dates { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+  .job-note { font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+  ul { margin: 5px 0 0 0; padding-left: 16px; }
+  li { margin-bottom: 3.5px; }
+  li::marker { color: var(--muted); }
+  strong { font-weight: 600; }
+
+  .skill-row { display: flex; gap: 8px; margin-bottom: 4px; }
+  .skill-label { flex: 0 0 150px; font-weight: 600; font-size: 13px; }
+  .skill-list { color: #333; }
+
+  .edu-row { display: flex; justify-content: space-between; gap: 12px; }
+  .foot-note {
+    margin-top: 16px;
+    font-size: 11px;
+    color: #999;
+    border-top: 1px solid var(--line);
+    padding-top: 6px;
+  }
+
+  @page { size: A4; margin: 13mm 15mm; }
+  @media print {
+    body { background: #fff; font-size: 11.2px; }
+    .page {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+    h1 { font-size: 24px; }
+    .headline { font-size: 14px; }
+    section { margin-top: 12px; }
+    .job { margin-bottom: 10px; }
+    li { margin-bottom: 2.5px; }
+    .foot-note { display: none; }
+    a { text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Cristian Necula</h1>
+    <div class="headline">Full-Stack Engineer — JavaScript / TypeScript &amp; PHP</div>
+    <div class="contact">
+      Iași, Romania &middot; Remote (US / EU) &middot;
+      <a href="mailto:cristian.ncl@gmail.com">cristian.ncl@gmail.com</a> &middot;
+      <a href="https://www.linkedin.com/in/cristian-necula-7b744843/">linkedin.com/in/cristian-necula-7b744843</a> &middot;
+      <a href="https://github.com/cristinecula">github.com/cristinecula</a>
+    </div>
+  </header>
+
+  <div class="summary">
+    <p>
+      Full-Stack Engineer with 15 years building complete products, from MySQL schemas and REST APIs
+      with OAuth to high-traffic frontend architecture, React hooks internals and performance-first
+      component systems. Founded and built a B2B SaaS end to end
+      (PHP, MySQL, Varnish, Ansible) serving embeds on major publishers; then seven years as senior
+      engineer on an open-source invoicing platform serving millions of invoices — zero-downtime
+      framework migrations, testing infrastructure and CI. ~3,000 merged open-source pull requests
+      since 2012, maintainer of pionjs.
+    </p>
+  </div>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Full-Stack Engineer (founding team) &middot; <span class="job-company">Widgetic / Blogvio</span></div>
+        <div class="job-dates">Jun 2015 – Feb 2019</div>
+      </div>
+      <div class="job-note">B2B SaaS platform for embedding customizable widgets (players, feeds, forms) on third-party websites; REST API + OAuth foundation for a planned widget marketplace</div>
+      <ul>
+        <li><strong>Built the platform end to end</strong> — PHP and Node.js backends (Express, Koa, Joi), MySQL schema, JavaScript frontend and deployment — owning everything from database to devops and caching.</li>
+        <li><strong>Designed and implemented the platform's REST API with OAuth authentication</strong>, enabling widget publishing and iframe embedding on external sites and site builders (Wix, Shopify) — the foundation for the planned third-party widget marketplace.</li>
+        <li><strong>Served high-traffic embeds through a Varnish front-cache with zero downtime</strong> on major publishers such as lefigaro.fr, handling tens of thousands of embed impressions.</li>
+        <li><strong>Ran lean, repeatable production infrastructure:</strong> services containerized with Docker (PHP, MySQL, Varnish) on three minimal DigitalOcean servers, provisioned with Ansible.</li>
+        <li><strong>Evolved the widget frontend stack from jQuery to Svelte 1/2</strong> as widgets grew in complexity — contributing fixes upstream to sveltejs/svelte and sveltejs/svelte-loader along the way.</li>
+        <li><strong>Built the widgets' admin interfaces in React, shipped in the Wix admin UI</strong> — letting site owners configure Widgetic widgets directly on the platform.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Senior Frontend Developer &middot; <span class="job-company">Neovici</span></div>
+        <div class="job-dates">Feb 2019 – Present</div>
+      </div>
+      <div class="job-note">Cosmoz — open-source B2B invoicing platform serving millions of invoices</div>
+      <ul>
+        <li><strong>Led the migration of a production stack from Polymer 2 → Polymer 3 → Lit/pionjs with zero downtime</strong>, using expert interoperability strategies to ship incrementally while features kept flowing.</li>
+        <li><strong>Built the platform's end-to-end testing system:</strong> PollyJS-based API recordings with custom extensions for capturing Server-Sent Events (SSE) streams, wired into GitHub Actions CI.</li>
+        <li><strong>Eliminated severe performance issues</strong> — main-thread lagging and memory leaks — across core components of the invoicing app, and rewrote problematic components.</li>
+        <li><strong>Maintain pionjs</strong>, an open-source micro-framework adding React-style hooks to Web Components, and train colleagues on the component architecture.</li>
+        <li><strong>Modernized the shared component library to the latest web-platform standards</strong> (Baseline-capable APIs), raising quality and consistency across all Cosmoz apps.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Web Developer &middot; <span class="job-company">Vuzum</span></div>
+        <div class="job-dates">2010 – May 2015</div>
+      </div>
+      <div class="job-note">Web agency of ~20 people building client websites</div>
+      <ul>
+        <li>Delivered PHP websites for small-business clients, starting with WordPress and advancing to Symfony 2, with jQuery-based frontends.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Open Source</h2>
+    <div class="job-note" style="margin-bottom: 10px;">
+      ~3,000 open-source pull requests merged since 2012 — 2,900+ across the Neovici/Cosmoz open-source
+      ecosystem and ~50 to external projects, including svelte and haunted.
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">pionjs <span class="job-company">&middot; Maintainer</span></div>
+        <div class="job-dates">github.com/pionjs/pion &middot; 127★</div>
+      </div>
+      <ul>
+        <li>Open-source micro-framework implementing React's Hooks API for Web Components; runs in production
+          across the Cosmoz platform. Also contributed to <strong>haunted</strong> (2.7k★), the hooks-for-Web-Components
+          library that pion derives from.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Cosmoz component ecosystem &middot; <span class="job-company">Neovici</span></div>
+        <div class="job-dates">github.com/Neovici</div>
+      </div>
+      <ul>
+        <li>Long-term contributor and maintainer across the org's open-source ecosystem — commits in <strong>62 of
+          its 80 public repositories</strong> (5,000+ commits) on shared components and libraries (cosmoz-omnitable,
+          cosmoz-router, cosmoz-form, and more) published on npm.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">External contributions</div>
+      </div>
+      <ul>
+        <li><strong>Early Svelte contributor (2017)</strong> — merged PRs into sveltejs/svelte and sveltejs/svelte-loader while building production widgets with Svelte 1/2 at Widgetic.</li>
+        <li>Merged PRs into inline-source, GitGutter, JMSDebuggingBundle and other community projects.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <div class="job-title">Personal projects</div>
+      </div>
+      <ul>
+        <li><strong>knowledge-mcp</strong> — TypeScript MCP server implementing a brain-inspired memory model
+          (knowledge decay, associative linking, knowledge-graph visualization) for agent tooling.</li>
+        <li><strong>Spelling Bee</strong> — educational browser game for kids built with Phaser 4 and TypeScript,
+          including in-browser text-to-speech via kokoro-js.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skill-row"><div class="skill-label">Languages</div><div class="skill-list">JavaScript (ES modules), TypeScript, PHP, HTML, CSS</div></div>
+    <div class="skill-row"><div class="skill-label">Backend</div><div class="skill-list">Node.js (Express, Koa, Joi), REST API design, OAuth, PHP / Symfony, MySQL</div></div>
+    <div class="skill-row"><div class="skill-label">Infra &amp; DevOps</div><div class="skill-list">Docker, Varnish, Ansible, DigitalOcean, GitHub Actions, CI/CD</div></div>
+    <div class="skill-row"><div class="skill-label">Frontend</div><div class="skill-list">Web Components, Lit / lit-html, React (app development + hooks internals via pionjs), jQuery → Svelte migration, modern CSS, performance profiling</div></div>
+    <div class="skill-row"><div class="skill-label">Tooling &amp; Testing</div><div class="skill-list">Vite, PollyJS (API recording), SSE streaming, end-to-end testing</div></div>
+    <div class="skill-row"><div class="skill-label">Practices</div><div class="skill-list">Zero-downtime migrations, component library architecture, mentoring</div></div>
+  </section>
+
+  <section>
+    <h2>Education &amp; Languages</h2>
+    <div class="edu-row">
+      <div><strong>BSc Computer Science</strong> &middot; Alexandru Ioan Cuza University, Iași</div>
+      <div class="job-dates">2007 – 2010</div>
+    </div>
+    <div class="edu-row" style="margin-top:5px;">
+      <div><strong>Theoretical High School of Informatics „Grigore Moisil"</strong> &middot; Iași &mdash; first HTML websites, first paid web development work at age 16</div>
+      <div class="job-dates">2003 – 2007</div>
+    </div>
+    <div style="margin-top:5px;">Romanian (native) &middot; English (fluent)</div>
+  </section>
+
+
+</div>
+</body>
+</html>
